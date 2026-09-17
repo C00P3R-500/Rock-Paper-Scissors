@@ -1,3 +1,8 @@
+let humanScore = 0;
+let computerScore = 0;
+
+
+
 function getComputerChoice(num) {
 
     if (num === 0) {
@@ -21,9 +26,15 @@ function random() {
 }
 
 function getHumanChoice() {
-    let humanChoice = prompt("Rock Paper Scissors?: ");
+    let humanChoice = prompt("Rock Paper Scissors? ");
 
-
+    if (humanChoice === "Rock" || humanChoice === "Paper" || humanChoice === "Scissors"){
+        console.log(humanChoice);
+    }
+    else {
+        alert("Try again!");
+        getHumanChoice();
+    }
 }
 
 random();
