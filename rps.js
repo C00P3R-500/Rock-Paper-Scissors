@@ -41,7 +41,6 @@ function getComputerChoice(num) {
         choice = "scissors";
     }
 
-    console.log("Computer: " +choice);
     return choice;
 }
 
