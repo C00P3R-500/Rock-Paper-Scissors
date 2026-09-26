@@ -75,7 +75,7 @@ function playRound (humanChoice) {
         computerScore = computerScore + 1;
     }
     else if (humanChoice === computerChoice) {
-        message.textContent = "Tie!";
+        message.textContent = "Same Choice Selected!";
     }
     else {
         alert("ERROR");
